@@ -9,3 +9,4 @@ compile_commands.json
 mbed-os
 cmake_build
 lcdlib
+libcalc
