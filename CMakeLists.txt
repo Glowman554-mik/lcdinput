@@ -17,12 +17,16 @@ mbed_configure_app_target(${APP_TARGET})
 include(lcdlib/lcdlib.cmake)
 include_directories(lcdlib/include)
 
+include(libcalc/libcalc.cmake)
+include_directories(libcalc/include)
+
 project(${APP_TARGET})
 
 target_sources(${APP_TARGET}
     PRIVATE
         main.cpp
         ${LCDLIB_SRC}
+        ${LIBCALC_SRC}
 )
 
 target_link_libraries(${APP_TARGET}
